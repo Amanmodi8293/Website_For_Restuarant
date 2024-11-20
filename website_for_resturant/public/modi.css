@@ -1,0 +1,212 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* css variable */
+:root{
+    --navbar-height: 59px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    position:relative;
+}
+/* navigation bar: logo and image */
+.logo{
+    margin: 24px;
+}
+.logo img{
+    margin: 0px px;
+    height: 200px;
+}
+/* navigation bar: list styling */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:10;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 3.3rem;
+    font-family: 'Baloo Bhai';
+}
+#navbar ul li a{
+    color: white;
+   display: block;
+   padding: 0px 20px;
+   margin-top:95px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
+}
+/* Home section */
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 2525px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 50px 22px;
+    font-size: 80px;
+}
+    #Home::before{
+        content: "";
+        background-image: url(background.jpg);
+        position: absolute;
+        height: 2858px;
+        width: 100%;
+        top:0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    /* services section */
+    #services{
+        display: flex;
+        margin: 0px;
+    }
+    #services .box{
+        border: 2px solid rgb(255, 0, 0);
+        padding: 10px 10px;
+        margin: 20px 5px;
+        background-color: #e2e1ee;
+        border-radius: 100px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #services .box img{
+        display: block;
+        /* margin: auto; */
+        height: 400px;
+        /* overflow: hidden; */
+    }
+    #services .box p{
+        font-size: 50px;
+        font-family:serif;
+    }
+
+    /* clients section */
+    #client-section{
+        height: 800px;
+        position: relative;
+        border: 10px solid #722323;
+        overflow: hidden;
+    }
+    #client-section::before{
+        content: "";
+        background-image: url(images\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute; 
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #clients img{
+        height: 180px;
+    }
+    .client-item{
+        padding:34px;
+        margin: 2px 2px;
+    }
+    /* contact section */
+    #contact{
+        position: relative;
+        height: 1300px;
+        margin-top:10px ;
+    }
+    #contact::before{
+        content: "";
+        background-image: url(image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute; 
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    #contact-box input,textarea{
+        width: 100%;
+        padding: 1rem;
+        border-radius: 20px;
+        font-size: 35px;
+    }
+    #contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 34px;
+    }
+    #contact-box form{
+        width:40%;
+    }
+    #contact-box label{
+        font-size: 50px;
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        padding: 10px 2px;
+        font-size: 80px;
+        font-style: italic;
+    }
+    
+    /* Utility classes */
+    #Home h1{
+        color:#3d0f0f;
+        text-align: center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #Home p{
+        color:#230d55;
+        text-align: center;
+        font-size: 7rem;
+    }
+    .h-primary{
+        font-size: 10.8rem;
+        padding: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .h-secondary{
+        font-size: 5.8rem;
+        padding: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .btn{
+        padding: 10px 40px;
+        margin: 70px 2px;
+        background-color:#8d0d0d;
+        color: white;
+        border: 20px solid black;
+        font-size: 6rem;
+        border-radius: 100px;
+        cursor: pointer;
+    }
+    .center{
+        text-align: center;
+    }
